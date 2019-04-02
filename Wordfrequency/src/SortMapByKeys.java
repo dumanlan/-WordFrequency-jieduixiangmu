@@ -10,9 +10,9 @@ import java.util.Set;
 import java.util.Map.Entry;
 
 public class SortMapByKeys {
-
+	static Map<String, Integer> Map=MainWindows.hashMap;
 	//根据键的字母顺序排序，排好后放到result.txt文件中
-    public static void sortMapByKeys(Map<String, Integer> Map) {  
+    public static void sortMapByKeys() {  
     	  
         Set<Entry<String,Integer>> mapEntries = Map.entrySet();    
         LinkedList<Entry<String, Integer>> List = new LinkedList<Entry<String,Integer>>(mapEntries);  
@@ -32,7 +32,6 @@ public class SortMapByKeys {
         }  
   
         //将排序好的单词及对应的词频放到文件中
-        System.out.println("正在向文件中存放，请稍后...\n");
         File file = new File("result.txt");
         try {
         	if(file.exists()) {
@@ -43,7 +42,6 @@ public class SortMapByKeys {
         		fop.write(entry.getKey()+":\t"+entry.getValue()+"\n");
         	}
         	fop.close();
-        	System.out.println("存放结束，请在当前目录下查看！");
         }catch(IOException e) {
         	e.printStackTrace();
         }
