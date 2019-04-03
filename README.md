@@ -1,1 +1,1 @@
-#### -WordFrequency-jieduixiangmu第二次上传的是没有可视化的软件,Wordfrequency文件是最终版本的软件，包括10个类以及两个运行出结果的txt文件
+#### -WordFrequency-jieduixiangmu中WorCount文件夹中是我们打算采用的第二次实验的基本源代码第二次上传的是没有可视化的软件,Wordfrequency文件是最终版本的软件，包括10个类以及两个运行出结果的txt文件
